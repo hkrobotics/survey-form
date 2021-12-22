@@ -156,7 +156,7 @@ header #description {
 
 label {
   display: block;
-  align-items: center;
+  align-items: baseline;
   display: flex;
 }
 
