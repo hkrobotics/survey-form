@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- UNICON FONT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1 id="title">
+                freeCodeCamp Survey Form
+            </h1>
+
+
+            <p id="description" class="clr-subtitle fw-450">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </header>
+
+
+
+
+        <form action="" id="survey-form">
+            <div class="form-group"></div>
+            <label for="name" id="name-label" class="fw-450"><i class="uil uil-user-circle"></i> Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="fw-450">
+            </div>
+
+
+            <div class="form-group">
+                <label for="email" id="email-label" class="fw-450"><i class="uil uil-at"></i> Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" class="fw-450">
+            </div>
+
+
+            <div class="form-group">
+                <label for="age" id="number-label" class="fw-450"><i class="uil uil-18-plus"></i> Age <span
+                        class="clue noselect fw-450">(optional)</span></label>
+                <input type="number" name="age" id="age" placeholder="enter your age" class="fw-450">
+            </div>
+
+            <p id="recommend_label" class="fw-450">Would you recommend freeCodeCamp to a friend?</p>
+            <div class="check-form">
+                <input type="radio" value="definitely" name="recommend" id="definitely" checked>
+                <label for="definitely">Definitely</label>
+            </div>
+
+            <div class="check-form">
+                <input type="radio" value="maybe" name="recommend" id="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+
+            <div class="check-form">
+                <input type="radio" value="not-sure" name="recommend" id="not-sure">
+                <label for="not-sure">Not Sure</label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="role" id="role-label" class="fw-450">Which option best describes your current role?</label>
+                <select name="role" id="role" class="fw-450">
+                    <option value="" disabled selected class="fw-450">Select current role</option>
+                    <option value="student" class="fw-450">Student</option>
+                    <option value="job" class="fw-450">Full time job</option>
+                    <option value="learner" class="fw-450">Full time learner</option>
+                    <option value="preferNo" class="fw-450">Prefer not to say</option>
+                    <option value="other" class="fw-450">Other</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="fav-feature" id="fav-feature-label" class="fw-450">What is your favorite feature of
+                    freeCodeCamp?</label>
+                <select name="fav-feature" id="fav-feature" class="fw-450">
+                    <option value="" disabled selected class="fw-450">Select an option</option>
+                    <option value="challenges" class="fw-450">
+                        Challenges
+                    </option>
+                    <option value="projects" class="fw-450">
+                        Projects
+                    </option>
+                    <option value="community" class="fw-450">
+                        Community
+                    </option>
+                    <option value="openSource" class="fw-450">
+                        Open Source
+                    </option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <p class="fw-450">What would you like to see improved?<span class="clue noselect ">(Check all that
+                        apply)</span></p>
+
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="front-end-projects">
+                    <p class="noselect cp">Front-end Projects</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="back-end-projects">
+                    <p class="noselect cp">Back-end Projects</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="data-visualizatio">
+                    <p class="noselect cp">Data Visualization</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="challenges">
+                    <p class="noselect cp">Challenges</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="open-source-community">
+                    <p class="noselect cp">Open Source Community</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="gitter-help-rooms">
+                    <p class="noselect cp">Gitter help rooms</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="videos">
+                    <p class="noselect cp">Videos</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="city-meetups">
+                    <p class="noselect cp">City Meetups</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="wiki">
+                    <p class="noselect cp">Wiki</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="forum">
+                    <p class="noselect cp">Forum</p>
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" id="input-checkbox" value="additional-courses">
+                    <p class="noselect cp">Additional Courses</p>
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="comments" id="comments-label" class="fw-450"><i class="uil uil-comment-question"></i>Any
+                    comments or suggestions?</label>
+                <textarea name="comments" id="comments" placeholder="Enter your comment here..."
+                    class="fw-450"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="fw-450">Submit <i
+                        class="uil uil-telegram-alt fw-450"></i></button>
+            </div>
+        </form>
+
+        <!-- UNICON -->
+        <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+
+    </main>
+</body>
+
+</html>
